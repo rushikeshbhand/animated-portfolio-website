@@ -1,0 +1,20 @@
+/* ANIMATED MINUS */
+.navbar-toggle.minus.collapsed .icon-bar:nth-of-type(1) {
+    transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.minus.collapsed .icon-bar:nth-of-type(2) {
+    transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.minus.collapsed .icon-bar:nth-of-type(3) {
+    transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.minus .icon-bar:nth-of-type(1) {
+    transform: translate3d(0,6px,0);
+}
+
+.navbar-toggle.minus .icon-bar:nth-of-type(3) {
+    transform: translate3d(0,-6px,0);
+}

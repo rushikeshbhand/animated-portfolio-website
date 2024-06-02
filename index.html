@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanta.js NET Effect</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Include Three.js and Vanta.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <style>
+        /* Adding custom styles for the backdrop blur */
+        .backdrop-blur {
+            backdrop-filter: blur(10px);
+        }
+
+        #about p {
+            margin-bottom: 1.5rem;
+            /* Match previous spacing */
+        }
+
+        .bgcolor {
+            background-color: #150D27;
+        }
+        
+    </style>
+</head>
+
+<body class="bg-fixed bg-cover">
+    <!-- Responsive Navbar with Blur Background -->
+    <header class="fixed w-full z-10">
+        <nav class="backdrop-blur bg-gray-800 bg-opacity-50 p-4 py-5">
+            <div class="container mx-auto flex items-center justify-between">
+                <a href="#" class="text-white text-xl font-bold">Rushi's Portfolio</a>
+                <button id="navbar-toggle" class="text-white focus:outline-none md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <ul id="navbar-menu" class="hidden md:flex space-x-8 text-white">
+                    <li><a class="hover:text-gray-300 transition duration-300" href="#">About</a></li>
+                    <li><a class="hover:text-gray-300 transition duration-300" href="#">Projects</a></li>
+                    <li><a class="hover:text-gray-300 transition duration-300" href="#">Skills</a></li>
+                    <li><a class="hover:text-gray-300 transition duration-300" href="#">Courses</a></li>
+                    <li><a class="hover:text-gray-300 transition duration-300" href="#">Services</a></li>
+                </ul>
+            </div>
+            <ul id="mobile-menu" class="hidden md:hidden text-white space-y-2 p-4">
+                <li><a class="hover:text-gray-300 transition duration-300" href="#">About</a></li>
+                <li><a class="hover:text-gray-300 transition duration-300" href="#">Projects</a></li>
+                <li><a class="hover:text-gray-300 transition duration-300" href="#">Skills</a></li>
+                <li><a class="hover:text-gray-300 transition duration-300" href="#">Courses</a></li>
+                <li><a class="hover:text-gray-300 transition duration-300" href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content with Vanta.js Effect -->
+    <section id="vanta-net" class="min-h-screen flex flex-col items-center justify-center">
+        <div class="md:mt-16">
+            <h1 class="text-white text-center text-4xl md:text-6xl md:font-semibold">MY NAME IS RUSHIKESH AND I'M
+            </h1>
+            <div class="mb-54">
+                <!-- Element to contain animated typing -->
+                <span id="element" class="text-white text-3xl MD:text-4xl flex justify-center"></span>
+            </div>
+            <div class="mt-5 text-center">
+                <a href="./assets/Rushikesh Bhand - 7720917206 - full stack web developer.pdf" download="RushikeshBhandResume.pdf" class="mr-6">
+                    <span class="border border-solid border-white rounded-3xl text-white px-3 py-2">Download CV</span>
+                </a>
+                <a href="mailto:rushikeshgbhand@gmail.com" target="_blank">
+                    <button class="border border-solid border-white rounded-3xl text-white px-3 py-2">
+                        <i class="fas fa-envelope"></i> Hire Me
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <section id="about" class="bgcolor py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl text-white font-bold mb-8 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="md:w-1/2 md:pr-8">
+                    <p class="text-white text-xl leading-relaxed">
+                        I'm a Full Stack Web Developer and graduated in Mechanical Engineering in 2023 from Savitribai
+                        Phule Pune University. I excel in HTML, CSS, SCSS, Bootstrap, TailwindCSS, JavaScript, Angular,
+                        React.js, Java, C sharp, Typescript, Spring Boot, Express.js, SQL, MongoDB and more,
+                        continuously mastering emerging technologies. Drawing from my engineering background, I blend
+                        creativity and precision to craft web solutions. Committed to lifelong learning, I keep pace
+                        with industry trends. Engaging actively in the tech community, I lead workshops, collaborate
+                        with peers, and contribute to collective progress. As a leader, I actively pursue opportunities
+                        to create a positive impact. Navigating my career with a dedication to excellence, I embrace
+                        challenges, ensuring meaningful contributions to the dynamic realm of Full Stack Web
+                        Development.
+                    </p>
+                </div>
+                <div class="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <img src="./assets/Rushikesh-bhand.jpeg" alt="Profile Picture" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section  -->
+    <hr>
+    <section id="skills" class="py-16 bgcolor">
+        <div class="mx-34 md:mx-28 lg:mx-36 xl:mx-72 px-4">
+            <h2 class="text-4xl text-white font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-2 text-white mx-11 gap-28 md:gap-96 md:box text-xl">
+                <ul class="list-disc">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                    <li>JS</li>
+                    <li>SPLINE</li>
+                    <li>ANGULAR</li>
+                    <li>TYPESCRIPT</li>
+                    <li>REACT</li>
+                    <li>BOOTSTRAP</li>
+                    <li>TAILWIND CSS</li>
+                    <li>WORDPRESS</li>
+                </ul>
+                <ul class="list-disc">
+                    <li>JAVA</li>
+                    <li>C SHARP</li>
+                    <li>NODE JS</li>
+                    <li>EXPRESS JS</li>
+                    <li>DART</li>
+                    <li>MYSQL</li>
+                    <li>MONGODB</li>
+                    <li>MICROSERVICES</li>
+                    <li>REST API</li>
+                    <li>SPRING BOOT</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- projects section  -->
+    
+
+
+    <!-- Vanta.js Initialization Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            VANTA.NET({
+                el: "#vanta-net",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x4646b6,
+                backgroundColor: 0x150d27
+            });
+
+            const toggleButton = document.getElementById('navbar-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            toggleButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleButton.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+                } else {
+                    toggleButton.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>';
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['MERN STACK DEVELOPER.', 'JAVA DEVELOPER.', 'WORDPRESS DEVELOPER.', 'FULL STACK DEVELOPER.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
