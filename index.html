@@ -7,6 +7,10 @@
     <title>Vanta.js NET Effect</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Include Three.js and Vanta.js Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -21,11 +25,16 @@
             margin-bottom: 1.5rem;
             /* Match previous spacing */
         }
+        .text-color{
+            color: #9e7fdb;
+        }
 
         .bgcolor {
             background-color: #150D27;
         }
-        
+        .bgcourse{
+            background-color: #675690;
+        }
     </style>
 </head>
 
@@ -62,11 +71,11 @@
     <!-- Main Content with Vanta.js Effect -->
     <section id="vanta-net" class="min-h-screen flex flex-col items-center justify-center">
         <div class="md:mt-16">
-            <h1 class="text-white text-center text-4xl md:text-6xl md:font-semibold">MY NAME IS RUSHIKESH AND I'M
+            <h1 class="text-white text-center text-4xl md:text-6xl md:font-semibold">MY NAME IS <span class="text-color">RUSHIKESH</span> AND I'M
             </h1>
             <div class="mb-54">
                 <!-- Element to contain animated typing -->
-                <span id="element" class="text-white text-3xl MD:text-4xl flex justify-center"></span>
+                <span id="element" class="text-color text-3xl MD:text-4xl flex justify-center"></span>
             </div>
             <div class="mt-5 text-center">
                 <a href="./assets/Rushikesh Bhand - 7720917206 - full stack web developer.pdf" download="RushikeshBhandResume.pdf" class="mr-6">
@@ -85,7 +94,7 @@
     <section id="about" class="bgcolor py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl text-white font-bold mb-8 text-center">About Me</h2>
-            <div class="flex flex-col xl:ml-52 md:flex-row justify-center items-center">
+            <div class="flex flex-col xl:ml-52 md:flex-row justify-center items-center" data-aos="zoom-in-down">
                 <div class="md:w-1/2 md:pr-8">
                     <p class="text-white text-lg text-justify leading-relaxed">
                         I'm a Full Stack Web Developer and graduated in Mechanical Engineering in 2023 from Savitribai
@@ -100,7 +109,7 @@
                         Development.
                     </p>
                 </div>
-                <div class="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                <div class="md:w-1/2 md:pl-8 mt-6 md:mt-0" data-aos="zoom-in-down">
                     <img src="./assets/Rushikesh-bhand.jpeg" alt="Profile Picture" class="rounded-lg shadow-lg xl:h-96 ">
                 </div>
             </div>
@@ -112,7 +121,7 @@
     <section id="skills" class="py-16 bgcolor">
         <div class="mx-34 md:mx-28 lg:mx-36 xl:mx-72 px-4">
             <h2 class="text-4xl text-white font-bold mb-8 text-center">Skills</h2>
-            <div class="grid grid-cols-2 text-white mx-11 gap-28 md:gap-96 md:box text-sm md:text-xl">
+            <div class="grid grid-cols-2 text-white mx-11 gap-28 md:gap-96 md:box text-sm md:text-xl" data-aos="zoom-in-down">
                 <ul class="list-disc">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -145,7 +154,122 @@
     <hr>
 
     <!-- projects section  -->
+    <div class="bgcolor">
+        <h2 class="text-4xl text-white font-bold pt-11 mb-4 text-center">Projects</h2>
+        <section class="py-10">
+            <div class="container mx-auto px-4">
+                <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/ecom.jpeg" alt="E-commerce Project" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">E-commerce Project</h2>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/photokhicho.png" alt="Photography Website" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Photography Website</h2>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/mf.png" alt="Blog and Edutech Web Application" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Blog and Edutech Web Application</h2>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/news.png" alt="News Website" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold pt-6">News Website</h2>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/github-profile-finder.png" alt="News Website" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold pb-2">Github Profile Finder</h2>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in-down">
+                        <img src="./assets/textapp.png" alt="Text Website" class="w-full h-62 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold pt-14">Text Website</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
 
+    <!-- courses  -->
+    <section class="py-10 bgcolor">
+        <div class="container mx-auto px-4">
+            <h1 class="text-white text-3xl font-bold text-center mb-8">Courses</h1>
+            <div class="grid gap-8 lg:grid-cols-3 text-white sm:grid-cols-2 grid-cols-1">
+                <!-- Course 1 -->
+                <div class="bg-white bgcourse shadow-lg rounded-lg p-6" data-aos="zoom-in-down">
+                    <h2 class="text-2xl font-semibold mb-4">Java Full Stack Development with Angular</h2>
+                    <p>Learn how to build full-stack applications using Java and Angular. This course covers everything from front-end development to back-end services.</p>
+                </div>
+                <!-- Course 2 -->
+                <div class="bg-white bgcourse shadow-lg rounded-lg p-6" data-aos="zoom-in-down">
+                    <h2 class="text-2xl font-semibold mb-4">MERN Stack Course</h2>
+                    <p>Master the MERN stack (MongoDB, Express.js, React, and Node.js) to develop modern web applications with this comprehensive course.</p>
+                </div>
+                <!-- Course 3 -->
+                <div class="bg-white bgcourse shadow-lg rounded-lg p-6" data-aos="zoom-in-down">
+                    <h2 class="text-2xl font-semibold mb-4">Soft Skills Course</h2>
+                    <p>I have enhance my soft skills with this course, focusing on communication, teamwork, problem-solving, and leadership skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+     <section class="py-10 bg-white bgcolor text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center mb-8">Services</h1>
+            <div class="grid gap-8 lg:grid-cols-2 sm:grid-cols-1 grid-cols-1">
+                <!-- Web Development Service -->
+                <div class="bg-gray-100 shadow-lg rounded-lg p-6 bgcourse" data-aos="zoom-in-down">
+                    <h2 class="text-2xl font-semibold mb-4">Web Development Services</h2>
+                    <p>I provide web development services to build responsive, modern, and user-friendly websites and web applications tailored to your business needs.</p>
+                </div>
+                <!-- IT Solutions Service -->
+                <div class="bg-gray-100 shadow-lg rounded-lg p-6 bgcourse" data-aos="zoom-in-down">
+                    <h2 class="text-2xl font-semibold mb-4">IT Solutions</h2>
+                    <p>I offer IT solutions to help businesses optimize their technology infrastructure and operations, ensuring efficiency and reliability.</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center  ">
+                <h2 class="text-2xl text-white font-bold mb-8 text-center">Contact Me</h2>
+                <p>If you want to contact me, you can email or call me:</p>
+                <p class="mt-2">Email: <a href="mailto:rushikeshgbhand@gmail.com" class="text-blue-500">rushikeshgbhand@gmail.com</a></p>
+                <p class="mt-2">Phone: <a href="tel:+917720917206" class="text-blue-500">+91 7720917206</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Social Media Icons -->
+    <div class="social-acc pb-7 pt-6 flex justify-center space-x-6 bgcolor">
+        <a href="https://github.com/rushikeshbhand" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-black transition duration-300">
+            <i class="fab fa-github-square fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/__rushikesh_bhand__/" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 transition duration-300 mx-3">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rushikesh-bhand-49b1b3233/" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 transition duration-300">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.hackerrank.com/profile/rushikeshgbhand" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 transition duration-300 ms-3">
+            <i class="fab fa-hackerrank fa-2x"></i>
+        </a>
+    </div>
 
 
     <!-- Vanta.js Initialization Script -->
@@ -178,6 +302,8 @@
         });
     </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -188,6 +314,11 @@
             typeSpeed: 50,
         });
     </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
